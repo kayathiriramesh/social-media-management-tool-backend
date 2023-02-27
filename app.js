@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const cors=require("cors");
 const bcrypt = require("bcryptjs");
 const mongoose =require("mongoose");
-
+//const {CONNECTIONS}= require
 //ENV file configuration
 require("dotenv").config();
  
@@ -19,8 +19,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //DBCONFIGURATION file importing
-require('./dbConfig')
-
+require('./dbconfig')
+//CONNECTIONS()
 const UsersController= require("./Controllers/Register");
 const LoginController= require("./Controllers/Login");
 

@@ -1,7 +1,7 @@
 // for mongodb connect
 
 const mongoose =require("mongoose");
-
+//const CONNECTIONS=()=>{
 mongoose.connect(
 
    `mongodb+srv://${process.env.MONGO_USER_NAME}:${process.env.MONGO_PASSWORD}@cluster0.mc3htnf.mongodb.net/SocialMedia`,
@@ -18,3 +18,4 @@ mongoose.connect(
         }
     }
 );
+//module.exports={CONNECTIONS}
